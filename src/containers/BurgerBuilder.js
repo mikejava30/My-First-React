@@ -6,7 +6,7 @@ import Modle from '../components/UI/Modle/Modle';
 import OrderSummary from '../components/OrderSummary';
 
 const FOODPART_PRICES = {
-  letus: 0.5,
+  lettuce: 0.5,
   cheese: 0.7,
   meat: 1.9,
   bacon: 1.2
@@ -21,7 +21,7 @@ class BurgerBuilder extends Component {
   state = {
     ingredients: [],
     totalParts: {
-      letus: 0,
+      lettuce: 0,
       bacon: 0,
       cheese: 0,
       meat: 0
@@ -49,6 +49,10 @@ class BurgerBuilder extends Component {
 
   closeBuying = () => {this.setState({purchaseMode: false});}
 
+  continueBuying = () => {
+    alert('continue buying')
+  }
+
   render () {
     let disabledInfo = {...this.state.totalParts}
     for (let key in disabledInfo) {
@@ -60,7 +64,12 @@ class BurgerBuilder extends Component {
           show={this.state.purchaseMode}
           modleClosed={this.closeBuying}
         >
-          <OrderSummary parts={this.state.totalParts} />
+          <OrderSummary
+            parts={this.state.totalParts}
+            price={this.state.totalPrice}
+            cansel={this.closeBuying}
+            continue={this.continueBuying}
+          />
         </Modle>
         <Burger
           parts={this.state.ingredients}

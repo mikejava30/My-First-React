@@ -1,11 +1,11 @@
-.self {
+.Self {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
 }
 
-.self button {
+.Self button {
     display: block;
     font: inherit;
     padding: 5px;
@@ -16,14 +16,14 @@
     outline: none;
 }
 
-.self button:disabled {
+.Self button:disabled {
     background-color: #AC9980;
     border: 1px solid #7E7365;
     color: #ccc;
     cursor: default;
 }
 
-.self button:hover:disabled {
+.Self button:hover:disabled {
     background-color: #AC9980;
     color: #ccc;
     cursor: not-allowed;
@@ -35,22 +35,22 @@
     width: 80px;
 }
 
-.self .Less {
+.Self .Less {
     background-color: #D39952;
     color: white;
 }
 
-.self .More {
+.Self .More {
     background-color: #8F5E1E;
     color: white;
 }
 
-.self .Less:hover, .self .Less:active {
+.Self .Less:hover, .Self .Less:active {
     background-color: #DAA972;
     color: white;
 }
 
-.self .More:hover,.self .More:active {
+.Self .More:hover,.Self .More:active {
     background-color: #99703F;
     color: white;
 }

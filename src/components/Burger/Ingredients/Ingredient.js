@@ -29,7 +29,7 @@ class Ingredient extends Component {
         break;
       case ('letus'):
         part = <div
-          className={css.Letus}
+          className={css.Lettuce}
           onClick={this.props.clicked}></div>;
         break;
       case ('bacon'):

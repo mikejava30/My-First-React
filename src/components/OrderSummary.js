@@ -1,5 +1,6 @@
 import React from 'react';
 import Auxiliary from '../hoc/Auxiliary';
+import css from './UI/Button.css';
 
 const orderSummary = (props) => {
   const itemSummary = Object.keys(props.parts).map(key => {
@@ -16,9 +17,18 @@ const orderSummary = (props) => {
       <ul>
         {itemSummary}
       </ul>
+      <p><strong>Total Price: {props.price.toFixed(2)}</strong></p>
       <p>Continue to Checkout?</p>
+      <button
+        className={[css.Button, css.Bad].join(' ')}
+        onClick={props.cansel}
+      >CANSEL</button>
+      <button
+        className={[css.Button, css.Good].join(' ')}
+        onClick={props.continue}
+      >CONTINUE</button>
     </Auxiliary>
   )
 }
 
-export default orderSummary;
+export default React.memo(orderSummary);

@@ -3,7 +3,7 @@ import css from './BuildControls.css'
 import Controls from './Controls/Controls'
 
 const picker = [
-  {label:'Letus', type: 'letus'},
+  {label:'Lettuce', type: 'lettuce'},
   {label:'Bacon', type: 'bacon'},
   {label:'Cheese', type: 'cheese'},
   {label:'Meat', type: 'meat'},
