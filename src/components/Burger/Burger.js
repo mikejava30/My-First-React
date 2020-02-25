@@ -30,7 +30,7 @@ const burger = (props) => {
     parseIngredients = <p>Please start adding ingredients!</p>
   }
   return(
-    <div className={css.self}>
+    <div className={css.Self}>
       <Ingredients type='bread-top' />
         {parseIngredients}
       <Ingredients type='bread-bottom' />

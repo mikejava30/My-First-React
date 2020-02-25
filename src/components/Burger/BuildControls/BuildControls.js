@@ -10,7 +10,7 @@ const picker = [
 ];
 
 const buildControls = (props) => (
-  <div className={css.self}>
+  <div className={css.Self}>
     <p>Current Price: <strong>{props.price.toFixed(2)}</strong></p>
     {picker.map(ctrl => (
       <Controls

@@ -10,7 +10,7 @@ const modle = (props) => (
   <Auxiliary>
     <Backdrop show={props.show} clicked={props.modleClosed} />
     <div
-      className={css.self}
+      className={css.Self}
       style={{
         transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
         opacity: props.show ? '1' : '0'

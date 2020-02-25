@@ -27,7 +27,7 @@ class Ingredient extends Component {
           className={css.Cheese}
           onClick={this.props.clicked}></div>;
         break;
-      case ('letus'):
+      case ('lettuce'):
         part = <div
           className={css.Lettuce}
           onClick={this.props.clicked}></div>;
